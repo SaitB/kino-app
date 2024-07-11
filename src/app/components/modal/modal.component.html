@@ -1,0 +1,11 @@
+<div class="modal">
+  <h2 class="modal-title" mat-dialog-title>{{item.nameRu}}</h2>
+  <mat-dialog-content>
+    <img class="modal-img" [src]="item.posterUrl" [alt]="item.shortDescription">
+    <p>{{item.description}}</p>
+    <p>{{item.shortDescription}}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="btn" mat-button (click)="onNoClick()">Закрыть</button>
+  </mat-dialog-actions>
+</div>

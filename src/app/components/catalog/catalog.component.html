@@ -1,0 +1,30 @@
+<div class="container">
+  @for (item of data; track item) {
+    <mat-card class="card" appearance="outlined" (click)="openDialog(item)">
+      <mat-card-header>
+        <h1>{{item.nameRu}}</h1>
+      </mat-card-header>
+      <mat-card-content>
+        <img class="foto" mat-card-image  [src]="item.posterUrl">
+      </mat-card-content>
+      <p class="card-genres">Жанр:
+        <span class="card-genres-text">
+          @for (genre of item.genres; track genre) {
+            {{genre.genre + ','}}
+          }
+        </span>
+      </p>
+    </mat-card>
+  }
+</div>
+<div class="paginator">
+  <mat-paginator 
+    class="test"
+    [length]="length"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="[10,20]"
+    (page)="pagePaginate($event)"
+    showFirstLastButtons="true"
+    aria-label="Выбрать страницу">
+</mat-paginator>
+</div>

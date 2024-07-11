@@ -1,0 +1,48 @@
+.container {
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-top: 60px;
+    width: 360px;
+    height: 480px;
+    border-radius: 8px;
+
+    mat-card-header {
+      text-align: center;
+    }
+    h1 {
+      margin-left: 25px;
+      text-align: center;
+    }
+
+    .card-genres {
+      margin-left: 34px;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 10px 5px 5px black;
+   }
+
+
+.foto {
+    margin-left: 20px;
+    width: 280px;
+    height: 360px;
+}
+
+ .paginator{
+    width: 600px;
+    margin: 0 auto; 
+ }
+
+ 
+
+

@@ -1,0 +1,14 @@
+<div class="form">
+  <h1>Login Kino-app</h1>
+  <form  [formGroup]="form" (submit)="submit()">
+    <mat-form-field>
+      <mat-label>email</mat-label>
+      <input formControlName="email" matInput placeholder="email" value="email" type="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput placeholder="Password" value="Password" type="password">
+    </mat-form-field>
+    <button  type="submit" mat-stroked-button>Ввойти</button>
+  </form>
+</div>
